@@ -1,0 +1,104 @@
+   
+                                ***How to implement the Payroll System***
+
+This is the complete process to  implement the project and also the requirements of the software and languages.
+
+Software Requirements:
+Java Development kit (JDK) -> is a tool which is used to implement the JAVA SE, JAVA ME, or JAVA program etc. 
+
+Java Runtime Environment (JRE) -> this application is used to run the java program on a system not for development. JDK is important for development so for this project both Software needs. This project will run JDK 1.7 and JRE 7 and also it depends on the tomcat server. 
+
+Eclipse: This software is used to implement the JAVA, JSP or any other programming languages. This is web project so web application eclipse IDE for Java EE Developers will be needed. Eclipse Mars.1 (4.5.1) is used to implement this project.
+
+Tomcat: This is server which is used to deploy the code and output can be seen on the browser. Tomcat 6.0 or above version is required for this project.
+
+MySQL:  This is a database which is used to store the information about the client or another information at one place and can access easily.
+
+Web Browser: There are two web browser to see the output first one internal which is embedded with eclipse and other is external browser (Google Chrome, Firefox etc.).
+
+Junit testing:  It is an unit testing which is used to test the java project and it automated testing which is very fast.
+
+Languages Requirements
+
+The project uses the J2EE platform and its technologies. Some technologies will be used for a little work and some will be used throughout. The following is a complete list of all technologies and their use in the project in detail: 
+
+JAVA – It is one of the most powerful Object Oriented Platform Independent Language. Java is used in most of the project in one form or another. 
+
+JSP – Java Server Pages or JSP for short is a server-side technology that takes Java language with its inherent simplicity, and uses it to create highly interactive and flexible web applications. JSP will be used in the project to create most of the web pages that interact with the user.
+
+JavaScript – JavaScript is used for client- side scripting. It enables the web pages to have some programmatic functionality in the browser. JavaScript works with and can manipulate the HTML page in which it is embedded. JavaScript is used in the project to validate the data entered in the web pages by the user before it is send to the server. 
+
+Servlet – A Servlet is a Java Program that generates dynamic web content. They are written using the Java Servlet API and are managed by a Servlet container such as Tomcat. The Servlet processes the user request, builds a response, and passes it to the container which it back to the user. I have used a Servlet for making the controller in the web based e-mail system. It processes the user requests and gives appropriate response according to them.
+
+HTML – HTML or Hyper Text markup Language is used creating web pages. HTML pages are static and do not interact with the user but can be made interactive by adding JSP elements them. Most of the web pages in the project are designed in HTML and after that JSP elements are added to them. 
+
+XML – Extensible Markup Language or XML for short has become the de facto standard for data interchange on the Internet. We have not used it directly but a lot of configuration files of Apache Tomcat Server as well as Apache James E-mail server are written in this format.
+
+
+External jar files Required with this project and all the jar file will be included in lib folder which is in the project.
+
+
+1) mysql-connector-java-> Eclipse can not connect direclty with mysql database so this connector will be required 
+   to establish a connection between two technologies and used to store all the data in mysql.
+
+2)commons-fileupload- This jar file is   used to  upload files from client side to  server or mysql database
+
+3)commons-io-> This package defines utility classed for working with the streams,readers,writers and files.
+
+4)javax.servlet-api -> This is also a connector which is used implement java code in the eclipse and run on the server becuse some version of tomact 
+   version are not direcly connect with eclipse and upload the file so this API will be needed.
+
+5) junit4.jar and hamcrest-core.jar files-> These jar files will be needed to test the  project automated in junit.
+
+
+Installation:
+
+1) Install JRE or JDK 1.7 or above after successfully installation( C:\Program Files\Java) this directory of installation.
+ set the path of the Environment variable:In this project jre 1.7 is used.These are step to set environemnt variable.
+
+Right click on the computer->Go to Properties->Advanced system settings->Go to Environment Variables->click on new->
+ set two path of the JRE
+ Variable Name -> Path  and Variable Value-> C:\Program Files\Java\jre7\bin    and other
+ Variable Name-> JAVA_HOME  and Variable Value->C:\Program Files\Java\jre7  and finish
+
+
+2)Install the eclipse IDE EE devloper to run java code.In this  web application project Eclipse Mars.1 (4.5.1) or can install 
+  any version of eclipse which should be supported by Tomcat.
+
+3) set the path of the  jdk and JRE in Environment Variable in my computer.This is necessary because after this java program can run 
+   on the machine.
+   
+4) Tomcat version 6.0 or above will be required but not 9.0 becuse it is not supported by Eclipse Mars.1 (4.5.1).
+  Tomcat 6.0 is used with this project.
+
+5) After installation of of the two software set the path tomcat in the eclipse server.
+    Open eclipse->Go to Preference->click on the server->Runtime Environment->Add->select the version of tomcat ,it will show the version of
+    the tomcat which can be supported by your eclipse->Next->After next it will automcatically show tha name 
+    of the tomcat in next page and now set the installation directory of tomcat where you installed the tomcat->
+    select the JRE which version you installed->Finish
+    Now Tomcat successfully installed with your eclipse
+
+6) Install the mysql version which should be supoorted by your eclipse
+
+7) After successfully installation of all the software to start a new project there are steps.
+
+File->New-> Dynamic Web Project-> set the Name of the project-> and it will show automatically where your project 
+  will be stored and also can choose run time environment->Finish
+
+8) After successully make a project now can add jar file which is the requirements of the project.click on the project which
+   is inside the Project Explorer-> Go to WebContent->click on the WebContent->Go to WEB-INF-> click on the WEB-INF->Go
+   to lib and post all the jar files which are the requirements of the project. For example,here can paste files which is
+   the requirements of the project commons-fileupload-1.2.1,commons-io-1.4,javax.servlet-api-3.1.0,mysql-connector-java-5.1.37-bin
+
+9) Now run the project->
+   Click on the run which is above-> there will come many options-> select run-> now it will show your tomcat version which installed with
+   eclipse and click on it->Next->Finsih.
+
+ These are complete proecess  to run  this web application on the web browser.
+
+10) Test project using junit
+
+i) put all the required jar files which are above mentioned for the junit into the 
+ii) foder of a project
+iii) Now run a project as JUnit Test
+
